@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: normal;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 4px;
+  border: 0.1px solid rgba(0, 0, 0, 0.1);
+}
+
+input,
+select,
+option,
+textarea,
+button {
+  padding: 10px 20px;
+  border: 0.1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+h1 {
+  text-align: center;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.controls label {
+  display: block;
+}
+
+.timeline {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.timeline span {
+  margin: 0 10px;
+}
+
+#progress-bar {
+  flex-grow: 1;
+  height: 5px;
+  background-color: #ccc;
+}
+
+.buttonsBoll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#play-button,
+#pause-button,
+#resume-button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+  display: flex;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 12px;
+}
+
+#play-button:hover,
+#pause-button:hover,
+#resume-button:hover {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
